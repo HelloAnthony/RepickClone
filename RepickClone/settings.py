@@ -103,7 +103,8 @@ WSGI_APPLICATION = 'RepickClone.wsgi.application'
 
 
 DATABASES = {
-    'default': {
+    'default': dj_database_url.config(default='postgres://user:pass@localhost/dbname'){
+   
 
     }
 }
